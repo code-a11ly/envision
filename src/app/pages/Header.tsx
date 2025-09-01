@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
 
-    <section className="flex flex-col h-screen w-full justify-center items-center text-white text-center gap-16font-[family-name:var(--font-geist-sans)]">
+    <section className="flex flex-col h-screen w-full bg-white justify-center items-center text-gray-400 text-center gap-16font-[family-name:var(--font-geist-sans)]">
     {/*<section className="flex flex-col h-screen w-full bg-[url('/assets/building.jpg')] bg-cover bg-center justify-center items-center text-white text-center gap-16font-[family-name:var(--font-geist-sans)]">*/}
 
 
@@ -29,7 +29,7 @@ export default function Header() {
         {/* <div className="h-full w-px bg-gray-300" /> Divider */}
 
         <div className="flex flex-col ">
-          <h1 className="text-4xl md:text-6xl 2xl:text-8xl font-bold mb-4 dark:text-dk-title-txt [text-shadow:_2px_2px_4px_rgba(0,0,0,0.7)]">
+          <h1 className="text-4xl md:text-6xl 2xl:text-8xl font-bold mb-4 dark:text-dk-title-txt">
             building your dreams
           </h1>
 
@@ -37,7 +37,7 @@ export default function Header() {
         </div>
       </div>
 
-      <p className="text-black md:text-xl 2xl:text-3xl max-w-xl mb-8 [text-shadow:_2px_2px_4px_rgba(0,0,0,0.7)]">
+      <p className="text-black md:text-xl 2xl:text-3xl max-w-xl mb-8">
         🏢  together we make the future!  🏡
       </p>
 

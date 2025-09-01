@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { flow } from "./flow";
 
-const Chatbot: React.FC = () => {
+const Architect: React.FC = () => {
   const [currentStep, setCurrentStep] = useState("start");
   const [history, setHistory] = useState<string[]>([]); // stores chosen options
 
@@ -43,4 +43,4 @@ const Chatbot: React.FC = () => {
   );
 };
 
-export default Chatbot;
+export default Architect;
