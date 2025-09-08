@@ -2,6 +2,7 @@
 'use client'
 import Image from "next/image";
 import { useEffect } from 'react';
+import { ArrowRight } from "lucide-react";
 
 
 type Feed = {
@@ -10,7 +11,7 @@ type Feed = {
   review: string;
 }
 
-const feedBack: feed[] = [
+const feedback: feed[] = [
   {
     name: 'Maria Silva',
     function: 'Homeowner',
@@ -39,7 +40,7 @@ const feedBack: feed[] = [
 ];
 
 
-export default function Header() {
+export default function Feedback() {
 
   {/*
   useEffect(() => {
@@ -52,7 +53,7 @@ export default function Header() {
 
   return (
 
-    <div className="flex flex-col h-screen w-full bg-lt-gray justify-center items-center text-gray-400 text-center gap-16font-[family-name:var(--font-geist-sans)]">
+    <div className="flex flex-col h-wrap w-full bg-md-gray justify-center items-center text-gray-400 text-center gap-16font-[family-name:var(--font-geist-sans)]">
     {/*<section className="flex flex-col h-screen w-full bg-[url('/assets/building.jpg')] bg-cover bg-center justify-center items-center text-white text-center gap-16font-[family-name:var(--font-geist-sans)]">*/}
 
 
@@ -60,17 +61,23 @@ export default function Header() {
       <div className="absolute inset-0 bg-black bg-opacity-50"></div> */}
       {/* HEADERS */}
 
-      <div className="flex flex-row justify-center items-center">
+      <div className="flex flex-col justify-center items-center">
 
 
         {/* <div className="h-full w-px bg-gray-300" /> Divider */}
 
-        <h1 className="text-4xl md:text-5xl 2xl:text-7xl font-black mb-4 text-md-gray">
+        <h1 className="text-4xl md:text-5xl 2xl:text-7xl font-black mb-4 text-lt-gray p-12 m-12">
           What do people say <br/>about us?
         </h1>
 
-        <div className="flex flex-col ">
-
+        <div className="flex flex-row gap-12 m-24">
+          {feedback.map((f, key) => (
+            <div key={key} className="w-128 p-6 text-justify shadow-md bg-lt-gray rounded-lg">
+            <div className="w-wrap p-6 text-left">
+              <p>{f.review}</p>
+            </div>
+            </div>
+          ))}
 
         </div>
       </div>
