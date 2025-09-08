@@ -12,19 +12,29 @@ type Feed = {
 
 const feedBack: feed[] = [
   {
-    name: 'Create your Envision account',
-    function: 'Fill your data once and have access aways',
-    review: 'Create Account',
+    name: 'Maria Silva',
+    function: 'Homeowner',
+    review: 'From the first visit to the day we received the keys, the team made us feel supported and secure. The quality of the construction exceeded our expectations, and today we are living in the home of our dreams.',
   },
   {
-    name: 'Tell us what you are looking for',
-    function: 'We will start looking for your new place right away',
-    review: 'Take a forms',
+    name: 'Jorge Andrade',
+    function: 'Investor',
+    review: 'Working with this company has been one of the best business decisions I’ve made. The projects are delivered on time, with transparency and guaranteed return on investment. I couldn’t be more satisfied.',
   },
   {
-    name: 'We will get back to you ASAP',
-    function: 'As soon as we find what you want we will let you know',
-    review: 'See new updates',
+    name: 'Ana Costa',
+    function: 'Business Owner',
+    review: 'We needed a modern and functional office space, and the result was beyond what we imagined. The attention to detail, professionalism, and architectural vision were impeccable.',
+  },
+  {
+    name: 'Felipe Rocha',
+    function: 'Apartment Buyer',
+    review: 'When I was searching for my apartment, I was afraid of bureaucracy and delays. But everything was handled with incredible efficiency. The property is exactly as promised, and the service was exceptional.',
+  },
+  {
+    name: 'Carolina Mendes',
+    function: 'Repeat Client',
+    review: 'This is the second project we’ve done together, and once again, everything went smoothly. It’s a company that delivers not only buildings, but trust and lasting relationships.',
   },
 ];
 
