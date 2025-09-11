@@ -30,8 +30,8 @@ export default function Header() {
         {/* <div className="h-full w-px bg-gray-300" /> Divider */}
 
         <div className="flex flex-col ">
-          <h1 className="text-4xl md:text-5xl 2xl:text-7xl font-black mb-4 text-md-gray">
-            Less effort more results,<br/> the real Estate made for you
+          <h1 className="text-4xl md:text-5xl 2xl:text-7xl font-black mb-4 text-gray-500 opacity-90">
+            Less effort <span className="text-md-gray">more results,</span><br/> the real Estate made <span className="text-md-gray">for you</span>
           </h1>
 
 

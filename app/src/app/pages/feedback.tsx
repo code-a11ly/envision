@@ -1,8 +1,8 @@
 
 'use client'
 import Image from "next/image";
-import { useEffect } from 'react';
-import { ArrowRight } from "lucide-react";
+import { useEffect, useRef } from 'react';
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 
 type Feed = {
@@ -42,42 +42,59 @@ const feedback: feed[] = [
 
 export default function Feedback() {
 
-  {/*
-  useEffect(() => {
-    fetch('/api/hello')
-      .then((res) => res.json())
-      .then((data) => console.log(data.message));
-  }, []);
-  */}
+  const left = () => {
+    console.log("left");
+  };
+
+  const right = () => {
+    console.log("right");
+  };
 
 
   return (
 
     <div className="flex flex-col h-wrap w-full bg-md-gray justify-center items-center text-gray-400 text-center gap-16font-[family-name:var(--font-geist-sans)]">
-    {/*<section className="flex flex-col h-screen w-full bg-[url('/assets/building.jpg')] bg-cover bg-center justify-center items-center text-white text-center gap-16font-[family-name:var(--font-geist-sans)]">*/}
 
-
-      {/* Overlay
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div> */}
       {/* HEADERS */}
 
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col items-center">
 
 
         {/* <div className="h-full w-px bg-gray-300" /> Divider */}
 
-        <h1 className="text-4xl md:text-5xl 2xl:text-7xl font-black mb-4 text-lt-gray p-12 m-12">
-          What do people say <br/>about us?
-        </h1>
+        <div className="flex w-1/2 m-24 gap-12 justify-between items-end">
+          <h1 className="text-4xl md:text-5xl 2xl:text-7xl font-black text-left text-lt-gray">
+            What do <span className="italic font-black text-md-green text-7xl">people say</span> <br/>about us?
+          </h1>
 
-        <div className="flex flex-row gap-12 m-24">
+          <div className="flex gap-3">
+            <button
+              onClick={() => left()}
+              className="h-fit bg-white p-3 rounded-lg"
+            ><ArrowLeft/></button>
+
+            <button
+              onClick={() => right()}
+              className="h-fit bg-white p-3 rounded-lg"
+            ><ArrowRight/></button>
+          </div>
+        </div>
+
+
+        <div className="relative w-full">
+        <div className="flex flex-row gap-12 m-24 overflow-x-hidden scroll-smooth">
           {feedback.map((f, key) => (
             <div key={key} className="w-128 p-6 text-justify shadow-md bg-lt-gray rounded-lg">
-            <div className="w-wrap p-6 text-left">
-              <p>{f.review}</p>
-            </div>
+              <div className="w-wrap p-6 text-left">
+                <p>"{f.review}"</p>
+                <div className="text-left mt-6">
+                  <p className="text-white">{f.name}</p>
+                  <p className="text-sm text-gray-300">{f.function}</p>
+                </div>
+              </div>
             </div>
           ))}
+          </div>
 
         </div>
       </div>

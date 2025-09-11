@@ -8,6 +8,8 @@ import FeedBack from '@/app/pages/feedback'
 import Architect from '@/app/pages/Architect'
 import Search from '@/app/pages/Search'
 
+import Login from '@/app/pages/login'
+
 import { Link as ScrollLink, Element } from 'react-scroll';
 
 
@@ -60,6 +62,13 @@ export default function Home() {
         <Element name="search">
           <div>
             <Search />
+          </div>
+        </Element>
+
+        {/* LOGIN SECTION */}
+        <Element name="login">
+          <div>
+            <Login />
           </div>
         </Element>
 
