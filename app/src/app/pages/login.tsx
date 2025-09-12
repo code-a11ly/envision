@@ -82,7 +82,8 @@ function LoginForm() {
 
 
     return (
-      <div className="min-h-screen flex items-center justify-center bg-indigo-100">
+      <div className="min-h-screen flex items-center justify-center bg-[url('/assets/chairs-office.jpeg')] bg-cover bg-center">
+        <div className="absolute inset-0 backdrop-blur-sm bg-black/30"></div>
         <div className="w-96 bg-white shadow-md rounded-lg p-6">
           <h2 className="text-2xl font-bold text-center text-indigo-600 mb-6">Login</h2>
           <form

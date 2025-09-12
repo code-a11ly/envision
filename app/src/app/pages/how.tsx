@@ -58,11 +58,8 @@ export default function How() {
 
         <div className="flex flex-col ">
 
-          {hows.map((h, key) => (
-            <div key={key} className={((key % 2) != 0)? 'flex my-4' : 'flex flex-row-reverse my-4'}>
-              <div className="bg-gray-400 m-6 rounded-xl p-6 flex flex-col items-start space-y-4 shadow-lg w-64 opacity-30">
-
-              </div>
+          <div className="">
+            <div className="bg-gray-400 m-6 rounded-xl p-6 flex flex-wrap items-start space-y-4 shadow-lg w-fit bg-blur-sm">
               <div className="m-6 flex flex-col items-start space-y-4 w-64">
                 <div className="bg-lt-gray py-3 px-3.5 rounded-xl shadow-md">
                   <p className="font-black">0{key + 1}</p>
@@ -80,8 +77,52 @@ export default function How() {
                 </div>
               </div>
             </div>
-          ))}
-          {/* SHIELD */}
+          </div>
+
+
+          <div className="">
+            <div className="bg-gray-400 m-6 rounded-xl p-6 flex flex-wrap items-start space-y-4 shadow-lg w-fit bg-blur-sm">
+              <div className="m-6 flex flex-col items-start space-y-4 w-64">
+                <div className="bg-lt-gray py-3 px-3.5 rounded-xl shadow-md">
+                  <p className="font-black">0{key + 1}</p>
+                </div>
+
+                <h2 className="text-lt-gray text-left text-2xl font-bold">{h.title}</h2>
+
+                <p className="text-left text-sm text-gray-500 font-bold leading-relaxed">
+                  {h.context}
+                </p>
+
+                <div className="flex gap-2 bg-md-green p-3 rounded-lg text-white font-black cursor-pointer hover:bg-dk-green">
+                  {h.catch}
+                  <ArrowRight/>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div className="">
+            <div className="bg-gray-400 m-6 rounded-xl p-6 flex flex-wrap items-start space-y-4 shadow-lg w-fit bg-blur-sm">
+              <div className="m-6 flex flex-col items-start space-y-4 w-64">
+                <div className="bg-lt-gray py-3 px-3.5 rounded-xl shadow-md">
+                  <p className="font-black">0{key + 1}</p>
+                </div>
+
+                <h2 className="text-lt-gray text-left text-2xl font-bold">{h.title}</h2>
+
+                <p className="text-left text-sm text-gray-500 font-bold leading-relaxed">
+                  {h.context}
+                </p>
+
+                <div className="flex gap-2 bg-md-green p-3 rounded-lg text-white font-black cursor-pointer hover:bg-dk-green">
+                  {h.catch}
+                  <ArrowRight/>
+                </div>
+              </div>
+            </div>
+          </div>
 
 
 
