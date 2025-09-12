@@ -14,21 +14,21 @@ type How = {
 
 const hows: how[] = [
   {
-    title: 'Create your Envision account',
-    context: 'Fill your data once and have access aways',
-    catch: 'Create Account',
+    title: '',
+    context: '',
+    catch: '',
     path: '',
   },
   {
-    title: 'Tell us what you are looking for',
-    context: 'We will start looking for your new place right away',
-    catch: 'Take a forms',
+    title: '',
+    context: '',
+    catch: '',
     path: '',
   },
   {
-    title: 'We will get back to you ASAP',
-    context: 'As soon as we find what you want we will let you know',
-    catch: 'See new updates',
+    title: '',
+    context: '',
+    catch: '',
     path: '',
   },
 ];
@@ -56,23 +56,23 @@ export default function How() {
           How you can get a new place <br/> with Envision
         </h1>
 
-        <div className="flex flex-col ">
+        <div className="flex flex-row">
 
           <div className="">
-            <div className="bg-gray-400 m-6 rounded-xl p-6 flex flex-wrap items-start space-y-4 shadow-lg w-fit bg-blur-sm">
+            <div className="bg-gray-200 m-6 rounded-xl p-6 flex flex-wrap items-start space-y-4 shadow-lg w-fit bg-blur-sm">
               <div className="m-6 flex flex-col items-start space-y-4 w-64">
                 <div className="bg-lt-gray py-3 px-3.5 rounded-xl shadow-md">
-                  <p className="font-black">0{key + 1}</p>
+                  <p className="font-black">01</p>
                 </div>
 
-                <h2 className="text-lt-gray text-left text-2xl font-bold">{h.title}</h2>
+                <h2 className="text-lt-gray text-left text-2xl font-bold">Create your Envision account</h2>
 
                 <p className="text-left text-sm text-gray-500 font-bold leading-relaxed">
-                  {h.context}
+                  Fill your data once and have access aways
                 </p>
 
                 <div className="flex gap-2 bg-md-green p-3 rounded-lg text-white font-black cursor-pointer hover:bg-dk-green">
-                  {h.catch}
+                  Create Account
                   <ArrowRight/>
                 </div>
               </div>
@@ -81,20 +81,20 @@ export default function How() {
 
 
           <div className="">
-            <div className="bg-gray-400 m-6 rounded-xl p-6 flex flex-wrap items-start space-y-4 shadow-lg w-fit bg-blur-sm">
+            <div className="bg-gray-200 m-6 rounded-xl p-6 flex flex-wrap items-start space-y-4 shadow-lg w-fit bg-blur-sm">
               <div className="m-6 flex flex-col items-start space-y-4 w-64">
                 <div className="bg-lt-gray py-3 px-3.5 rounded-xl shadow-md">
-                  <p className="font-black">0{key + 1}</p>
+                  <p className="font-black">02</p>
                 </div>
 
-                <h2 className="text-lt-gray text-left text-2xl font-bold">{h.title}</h2>
+                <h2 className="text-lt-gray text-left text-2xl font-bold">Tell us what you are looking for</h2>
 
                 <p className="text-left text-sm text-gray-500 font-bold leading-relaxed">
-                  {h.context}
+                  We will start looking for your new place right away
                 </p>
 
                 <div className="flex gap-2 bg-md-green p-3 rounded-lg text-white font-black cursor-pointer hover:bg-dk-green">
-                  {h.catch}
+                  Take a forms
                   <ArrowRight/>
                 </div>
               </div>
@@ -104,20 +104,20 @@ export default function How() {
 
 
           <div className="">
-            <div className="bg-gray-400 m-6 rounded-xl p-6 flex flex-wrap items-start space-y-4 shadow-lg w-fit bg-blur-sm">
+            <div className="bg-gray-200 m-6 rounded-xl p-6 flex flex-wrap items-start space-y-4 shadow-lg w-fit bg-blur-sm">
               <div className="m-6 flex flex-col items-start space-y-4 w-64">
                 <div className="bg-lt-gray py-3 px-3.5 rounded-xl shadow-md">
-                  <p className="font-black">0{key + 1}</p>
+                  <p className="font-black">03</p>
                 </div>
 
-                <h2 className="text-lt-gray text-left text-2xl font-bold">{h.title}</h2>
+                <h2 className="text-lt-gray text-left text-2xl font-bold">We will get back to you ASAP</h2>
 
                 <p className="text-left text-sm text-gray-500 font-bold leading-relaxed">
-                  {h.context}
+                  As soon as we find what you want we will let you know
                 </p>
 
                 <div className="flex gap-2 bg-md-green p-3 rounded-lg text-white font-black cursor-pointer hover:bg-dk-green">
-                  {h.catch}
+                  See new updates
                   <ArrowRight/>
                 </div>
               </div>
