@@ -1,14 +1,15 @@
 // src/pages/index.tsx
 'use client'
 import Nav from '@/app/pages/nav'
-import Header from '@/app/pages/header'
-import Why from '@/app/pages/why'
-import How from '@/app/pages/how'
-import FeedBack from '@/app/pages/feedback'
-import Architect from '@/app/pages/Architect'
-import Search from '@/app/pages/Search'
+import Header from '@/app/pages/home/header'
+import Why from '@/app/pages/home/why'
+import How from '@/app/pages/home/how'
+import FeedBack from '@/app/pages/home/feedback'
+import Architect from '@/app/pages/home/Architect'
+import Search from '@/app/pages/home/Search'
+import Footer from '@/app/pages/home/footer'
 
-import Login from '@/app/pages/login'
+// import Login from '@/app/pages/login/login'
 
 import { Link as ScrollLink, Element } from 'react-scroll';
 
@@ -37,28 +38,28 @@ export default function Home() {
           </div>
         </Element>
 
-        {/* HEADER HOW */}
+        {/* HOW SECTION */}
         <Element name="how">
           <div>
             <How />
           </div>
         </Element>
 
-        {/* HEADER FEEDBACK */}
+        {/* FEEDBACK SECTION */}
         <Element name="feedback">
           <div>
             <FeedBack />
           </div>
         </Element>
 
-        {/* HEADER SECTION */}
+        {/* ARCHITECT SECTION */}
         <Element name="architect">
           <div>
             <Architect />
           </div>
         </Element>
 
-        {/* HEADER SECTION */}
+        {/* SEARCH SECTION */}
         <Element name="search">
           <div>
             <Search />
@@ -66,12 +67,20 @@ export default function Home() {
         </Element>
 
         {/* LOGIN SECTION */}
+        {/*
         <Element name="login">
           <div>
             <Login />
           </div>
         </Element>
+         */}
 
+         {/* FOOTER SECTION */}
+         <Element name="footer">
+           <div>
+             <Footer />
+           </div>
+         </Element>
 
 
 

@@ -2,10 +2,10 @@
 'use client'
 import React, { useState } from 'react';
 
-import GoogleLoginButton from '../../components/googleLoginButton.js';
+import GoogleLoginButton from '../../../components/googleLoginButton.js';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 
-import { getIp } from '../../components/ip.js';
+import { getIp } from '../../../components/ip.js';
 
 
 function LoginForm() {
